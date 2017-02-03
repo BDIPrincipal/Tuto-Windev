@@ -1,0 +1,22 @@
+PROCEDURE G_bConnexionHFSQLParVariable()
+
+conUneConnexion est une Connexion
+
+conUneConnexion..Serveur 	= "Monserveur:4900"
+conUneConnexion..Utilisateur 	= "Moncompteutilisateur"
+conUneConnexion..MotDePasse 	= "MonMDPducompteutilisateur"
+conUneConnexion..BaseDeDonnées 	= "MaBaseDeDonnées"
+conUneConnexion..Provider 	= hAccèsHFClientServeur
+
+SI HOuvreConnexion(conUneConnexion) ALORS
+	SI HChangeConnexion("*",conUneConnexion) ALORS
+		Info("Connexion OK.")
+		RENVOYER Vrai
+	SINON
+		Erreur("Une erreur est survenue lors du changement de connexion.")
+	FIN
+SINON
+	Erreur("Une erreur est survenue lors de l'ouverture de la connexion.")
+FIN
+
+RENVOYER Faux
