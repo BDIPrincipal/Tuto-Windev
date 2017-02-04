@@ -1,3 +1,4 @@
+//BDIPrincipal 2016
 PROCEDURE G_bConnexionHFSQLParProcedure()
 
 SI HDécritConnexion("MaConnexion", "Moncompteutilisateur", "MonMDPducompteutilisateur", "Monserveur:4900", "MaBaseDeDonnées", hAccèsHFClientServeur) ALORS

@@ -1,3 +1,4 @@
+//BDIPrincipal 2016
 PROCEDURE G_bConnexionHFSQLParVariable()
 
 conUneConnexion est une Connexion

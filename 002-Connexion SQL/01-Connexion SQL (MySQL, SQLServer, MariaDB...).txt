@@ -1,0 +1,14 @@
+//BDIPrincipal 2016
+PROCEDURE G_bConnexionSQL()
+
+nConnexion est un entier = SQLConnecte("MonServeurBDD", "CompteurUtilisateurBDD", "MotDePasseCompteUtilisateurBDD", "NomBaseDeDonnées")
+
+SI nConnexion=0 ALORS
+	RENVOYER Faux
+FIN
+
+//Effectuer traitement 
+
+SQLDéconnecte()
+
+RENVOYER Vrai
