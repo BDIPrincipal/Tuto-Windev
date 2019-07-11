@@ -1,3 +1,0 @@
-1 - Cliquez dans le menu "Fichier"->"Importer"->"Des éléments WINDEV et leurs dépendances".
-2 - Sélectionner le dossier où vous avez déposer le fichier .wdg (Collection de procédure) téléchargé.
-3 - Valider l'importation. Vous pouvez à présent utiliser les procédures importées.
